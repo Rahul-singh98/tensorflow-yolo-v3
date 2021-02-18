@@ -2,8 +2,7 @@
 
 import numpy as np
 import tensorflow as tf
-
-slim = tf.contrib.slim
+import tf_slim as slim
 
 _BATCH_NORM_DECAY = 0.9
 _BATCH_NORM_EPSILON = 1e-05

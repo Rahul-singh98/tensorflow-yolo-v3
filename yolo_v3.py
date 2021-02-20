@@ -70,7 +70,7 @@ def _spp_block(inputs, data_format='NCHW'):
                      axis=1 if data_format == 'NCHW' else 3)
 
 
-@tf_slim.add_arg_scope
+@slim.add_arg_scope
 def _fixed_padding(inputs, kernel_size, *args, mode='CONSTANT', **kwargs):
     """
     Pads the input along the spatial dimensions independently of input size.
